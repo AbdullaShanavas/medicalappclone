@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:id="@+id/lnr_splt"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/card_view1"
+        app:cardCornerRadius="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:cardElevation="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:orientation="horizontal"
+
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                app:cardCornerRadius="30dp"
+                android:layout_gravity="center"
+                >
+
+
+                <ImageView
+                    android:id="@+id/img_spcialist"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:background="@drawable/image"
+                    android:scaleType="centerCrop"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="7"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:weightSum="100"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:layout_weight="10">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/Black"
+                            android:text="1"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:id="@+id/sl_no"
+                            android:textStyle="bold"
+                            android:textSize="17dp"/>
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="left|center"
+                        android:layout_weight="50">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dr Parneesh Arora"
+                            android:textColor="@color/Black"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:id="@+id/drName"
+                            android:textStyle="bold"
+                            android:textSize="17dp"/>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="right"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="40">
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:src="@drawable/ic_baseline_star_24"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4.2"
+                            android:textColor="@color/Black"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:id="@+id/dr_rating"
+                            android:layout_marginRight="5dp"
+                            android:textStyle="bold"
+                            android:textSize="17dp"/>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="left"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:layout_weight="50">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fee :"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:textColor="@color/Black"
+                            android:textSize="17dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹150"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:textColor="@color/Black"
+
+                            android:id="@+id/dr_fees"
+                            android:textSize="17dp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:orientation="horizontal"
+                        android:gravity="right"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="40">
+
+                        <Button
+                            android:layout_width="110dp"
+                            android:layout_height="35dp"
+                            android:text="Call Now"
+                            android:layout_marginBottom="5dp"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:textColor="@color/material_blue_800_new"
+                            android:background="@drawable/editext_background"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

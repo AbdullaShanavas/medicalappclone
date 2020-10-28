@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="1dp">
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imgBack"
+
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+
+            android:src="@drawable/ic_baseline_chevron_left_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="Details"
+            android:layout_marginLeft="25dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="Save"
+            android:layout_marginRight="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/material_blue_800_new"
+            android:textSize="15sp"
+            android:textStyle="bold"
+
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/grey" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+
+        android:orientation="vertical"
+
+        tools:ignore="InefficientWeight">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Medicine Details :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Black"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+
+            android:layout_marginBottom="10dp"
+
+            >
+
+            <EditText
+                android:id="@+id/edt_med_detail"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="0.4"
+                android:background="@drawable/editext_background"
+                android:maxLength="50"
+                android:padding="5dp"
+                android:hint="Enter Medicine Details"
+                android:singleLine="true"
+                android:textSize="13dp"
+                tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:id="@+id/radioGroupFood"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rdoBefFood"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/material_blue_800_new"
+                    android:textSize="14dp"
+                    android:buttonTint="@color/material_blue_800_new"
+                    android:text="Before Food"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rdoAftFood"
+                    android:text="After Food"
+                    android:buttonTint="@color/material_blue_800_new"
+                    android:textColor="@color/material_blue_800_new"
+                    android:textSize="14dp"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Repeat"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Black"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+
+            >
+
+            <EditText
+                android:id="@+id/edt_repeat"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:hint="Repeat"
+                android:layout_weight="0.4"
+                android:background="@drawable/editext_background"
+                android:maxLength="50"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="13dp"
+                tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Frequency :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Black"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/edt_Freq"
+                android:layout_weight="0.4"
+                android:background="@drawable/editext_background"
+                android:maxLength="50"
+                android:hint="Frequency"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="13dp"
+                tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_shape"
+            android:padding="1dp"
+            android:text="Save"
+            android:textColor="@android:color/white"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

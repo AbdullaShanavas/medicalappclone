@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="1dp">
+
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_baseline_chevron_left_24" />
+
+
+        <TextView
+            android:id="@+id/textViewback"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="Back"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/material_blue_800_new"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="Settings"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Black"
+            android:textSize="17dp"
+            android:textStyle="bold"
+
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/grey">
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+
+        >
+
+        <TextView
+            android:id="@+id/txt_about"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/editext_background"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="About"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+
+        >
+
+        <TextView
+            android:id="@+id/txt_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/editext_background"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="Feedback"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+
+        >
+
+        <TextView
+            android:id="@+id/txt_change_pswd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/editext_background"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="Change Password"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+
+        >
+
+        <TextView
+            android:id="@+id/txt_manage_address"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/editext_background"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="Manage Address"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+
+        >
+
+        <TextView
+            android:id="@+id/txt_payment_history"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/editext_background"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="Payment History"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+
+        >
+
+        <TextView
+            android:id="@+id/txt_remainder"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/editext_background"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="Remainder"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+
+        >
+
+        <TextView
+            android:id="@+id/txt_helpSupport"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/editext_background"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="Help and Support"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="1dp">
+
+
+        <TextView
+            android:id="@+id/ts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+
+            android:layout_marginRight="25dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="Notification"
+
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Black"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+        <TextView
+            android:id="@+id/rightTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="17dp"
+            android:layout_marginBottom="5dp"
+            android:text="Show notification">
+
+        </TextView>
+
+        <ToggleButton
+            android:id="@+id/remember_me"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bgtoggle"
+            android:textOff=""
+            android:textOn="" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

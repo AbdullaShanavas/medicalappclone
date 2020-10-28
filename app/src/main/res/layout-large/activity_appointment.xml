@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.AppointmentActivity">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:gravity="left"
+                android:id="@+id/imgBack"
+                android:src="@drawable/ic_baseline_chevron_left_24"
+                android:textColor="@color/material_blue_800_new"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="Appointment"
+                android:textSize="17dp"
+                android:id="@+id/txtAppointment"
+                android:textColor="@color/Black"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/grey" />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="8dp">
+
+
+        <Button
+            android:id="@+id/btn_freq_specialist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Frequent Specialist"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:background="@color/material_blue_800_new"
+            android:textColor="@android:color/white"
+            android:textSize="17dp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="2.5"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:layout_marginLeft="10dp"
+            android:gravity="center|start"
+            android:text="Pateient Name :"
+            android:paddingLeft="10dp"
+            android:textColor="@color/Black"
+
+            android:textSize="17dp"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <LinearLayout
+            android:id="@+id/edt_pr"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/edt_patient_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLength="50"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="5dp"
+                android:background="@drawable/edittext_backgroundnormal"
+                android:singleLine="true"
+                android:textSize="17dp"
+                tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="2.5"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center|start"
+            android:layout_marginLeft="10dp"
+            android:text="Symptoms :"
+            android:paddingLeft="10dp"
+            android:textColor="@color/Black"
+
+            android:textSize="17dp"
+          />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/edt_symptoms"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLength="50"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="5dp"
+                android:background="@drawable/edittext_backgroundnormal"
+
+                android:textSize="17dp"              />
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        >
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:textSize="17dp"
+            android:text="Symptoms Description"
+            android:textColor="@color/Black"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/edtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="start"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/edittext_backgroundnormal"
+            android:textSize="17dp" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        >
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:textSize="17dp"
+            android:text="Select Time and Date"
+            android:textColor="@color/Black"
+            android:textStyle="bold" />
+
+
+
+
+        <EditText
+            android:id="@+id/edt_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:editable="false"
+            android:layout_marginTop="5dp"
+            android:focusable="false"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:maxLength="50"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:paddingLeft="5dp"
+            android:background="@drawable/edittext_backgroundnormal"
+            android:singleLine="true"
+            android:textSize="17dp"
+            tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/lnrlyt"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Morning-"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/Black"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 Slots available"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/material_blue_800_new"
+
+                    />
+            </LinearLayout>
+
+            <com.app.staycured.util.ExpandableHeightGridView
+                android:id="@+id/gridViewMorning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:verticalSpacing="2dp"
+                android:listSelector="@drawable/states_gridview"
+                android:horizontalSpacing="2dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Afternoon-"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/Black"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6 Slots available"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/material_blue_800_new"
+
+                    />
+            </LinearLayout>
+
+            <com.app.staycured.util.ExpandableHeightGridView
+                android:id="@+id/gridViewAfternoon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:verticalSpacing="2dp"
+                android:listSelector="@drawable/states_gridview"
+                android:horizontalSpacing="2dp"
+                android:numColumns="4"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Evening-"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/Black"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6 Slots available"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/material_blue_800_new"
+
+                    />
+            </LinearLayout>
+
+            <com.app.staycured.util.ExpandableHeightGridView
+                android:id="@+id/gridViewEvening"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:verticalSpacing="2dp"
+                android:listSelector="@drawable/states_gridview"
+                android:horizontalSpacing="2dp"
+                android:numColumns="4"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Night-"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:textColor="@color/Black"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6 Slots available"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/material_blue_800_new"
+
+                />
+        </LinearLayout>
+
+        <com.app.staycured.util.ExpandableHeightGridView
+            android:id="@+id/gridViewNight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:verticalSpacing="2dp"
+
+            android:listSelector="@drawable/states_gridview"
+            android:horizontalSpacing="2dp"
+            android:numColumns="4"/>
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="155dp"
+                android:layout_height="45dp"
+                android:text="Submit"
+                android:id="@+id/btnSubmit"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_shape"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

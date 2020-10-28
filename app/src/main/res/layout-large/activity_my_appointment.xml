@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="1dp">
+
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_baseline_chevron_left_24"
+            />
+
+
+        <TextView
+            android:id="@+id/textViewback"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Back"
+            android:visibility="gone"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/material_blue_800_new"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="25dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="My Appointments"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Black"
+            android:textSize="17dp"
+            android:textStyle="bold"
+
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_marginBottom="10dp">
+
+    </View>
+
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/material_blue_800_new"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:weightSum="1">
+
+
+        <TextView
+            android:id="@+id/txt_upcmg_apmts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:maxEms="10"
+            android:gravity="center_horizontal"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:text="Upcomming Appointments"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            tools:ignore="Deprecated,HardcodedText,RtlHardcoded,RtlSymmetry,SpUsage" />
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUpcoming"
+        android:text="There is no Upcoming Appointments Available"
+        android:gravity="center"
+        android:textSize="17dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/Black"
+        />
+
+    <ListView
+        android:id="@+id/lnr_upcomming_apmt"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+
+        >
+
+
+    </ListView>
+
+
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/material_blue_800_new"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="8dp"
+        android:weightSum="1">
+
+
+        <TextView
+            android:id="@+id/txt_past_Apmnts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:maxEms="10"
+            android:layout_centerInParent="true"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:text="Past Appointments"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            tools:ignore="Deprecated,HardcodedText,RtlHardcoded,RtlSymmetry,SpUsage" />
+
+
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lst_post_appmnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+
+        >
+
+    </ListView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPast"
+        android:text="There is no past Appointments Available"
+        android:gravity="center"
+        android:textSize="17dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/Black"
+        />
+
+
+</LinearLayout>

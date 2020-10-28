@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    >
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:padding="1dp">
+
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_baseline_chevron_left_24"
+                />
+
+
+            <TextView
+                android:id="@+id/textViewback"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Bookmarks"
+                android:textSize="17dp"
+                android:visibility="gone"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/material_blue_800_new"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="My Appointment Details"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/Black"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/Black"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center_horizontal"
+                >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:background="@color/material_blue_800_new"
+                    android:text="Patient Details"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="patient Name :"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:textColor="@color/Black"
+
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Jerry "
+                    android:id="@+id/txtPatientName"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Black"
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="patient problem :"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:textColor="@color/Black"
+
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fever "
+                    android:id="@+id/txtPatientSymp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Black"
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Gender :"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:textColor="@color/Black"
+
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Male "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Black"
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Age :"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:textColor="@color/Black"
+
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="19 "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Black"
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mobile Number :"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:textColor="@color/Black"
+
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="9810521521 "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Black"
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            >
+
+
+            <Button
+                android:id="@+id/btn_name"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:background="@color/material_blue_800_new"
+                android:text="Specialist Details"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="17dp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Specialist Name:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:textColor="@color/Black"
+
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dr Parneesh Arora "
+                    android:id="@+id/txtDrName"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Black"
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Speciality :"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:textColor="@color/Black"
+
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txt_sp_details"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cardiology "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Black"
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Education :"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:textColor="@color/Black"
+
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txt_sp_edu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="MBBS,MD "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Black"
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Experience :"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:textColor="@color/Black"
+
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txt_sp_exp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="6 years "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Black"
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mobile :"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:textColor="@color/Black"
+
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txt_sp_mobile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="9578521525 "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Black"
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Landline :"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:textColor="@color/Black"
+
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txt_sp_landline"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0222575485 "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Black"
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Languages Known :"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:textColor="@color/Black"
+
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txt_sp_lang"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="English,Malayalam "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Black"
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="StayCured Reg Date :"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:textColor="@color/Black"
+
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txt_sp_regdate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="11/02/2012 "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Black"
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Address :"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:textColor="@color/Black"
+
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+
+
+
+                    <TextView
+                        android:id="@+id/txt_sp_adrs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=" "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/Black"
+                        android:textSize="17dp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+
+                    <TextView
+                        android:id="@+id/txtSpAdrs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="11 mathura road,delhi "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/Black"
+                        android:textSize="17dp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+
+                    <TextView
+                        android:id="@+id/txt_spadrs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="110625 "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/Black"
+                        android:textSize="17dp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlApointment"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:weightSum="2"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    >
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_gravity="start"
+                        android:background="@drawable/button_shape"
+                        android:text="start"
+                        android:id="@+id/btnStart"
+                        android:textStyle="bold"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp"
+                        tools:ignore="HardcodedText" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center"
+                        android:layout_gravity="end"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_shape"
+                        android:text="Cancel"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:id="@+id/btnCancel"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp"
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    >
+                    <Button
+                        android:id="@+id/btn_rescheduleAppointment"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center"
+
+                        android:layout_gravity="start"
+                        android:background="@drawable/button_shape"
+                        android:text="Reschedule appointment"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp"
+                        tools:ignore="HardcodedText" />
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/lnr_rating"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                >
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:background="@color/material_blue_800_new"
+                    android:text="Your feedback"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:textSize="17dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:weightSum="100"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                >
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:gravity="start"
+                    android:id="@+id/edtComments"
+                    android:paddingLeft="5dp"
+                    android:layout_weight="85"
+                    android:background="@drawable/edittext_backgroundnormal"
+                    android:textSize="17dp" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="15">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_baseline_star_24"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.2"
+                        android:textColor="@color/Black"
+
+                        android:id="@+id/txt_rating"
+                        android:layout_marginRight="5dp"
+                        android:textStyle="bold"
+                        android:textSize="17dp"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:padding="1dp">
+
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/imgBack"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+
+            android:src="@drawable/ic_baseline_chevron_left_24" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="Add Medication"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Black"
+            android:textSize="21dp"
+            android:textStyle="bold"
+
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/grey" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+
+            android:orientation="vertical"
+
+            tools:ignore="InefficientWeight">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Name :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/Black"
+                android:textSize="21dp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,SpUsage" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+
+                android:layout_marginBottom="10dp"
+
+                >
+
+                <EditText
+                    android:id="@+id/edtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_weight="0.4"
+                    android:background="@drawable/editext_background"
+                    android:maxLength="50"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textSize="21dp"
+                    tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Dosage :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/Black"
+                android:textSize="21dp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,SpUsage" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+
+                >
+
+                <EditText
+                    android:id="@+id/edtDosage"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+
+                    android:layout_weight="0.4"
+                    android:background="@drawable/editext_background"
+                    android:maxLength="50"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textSize="21dp"
+                    tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Duration :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/Black"
+                android:textSize="21dp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,SpUsage" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="0.4"
+                    android:id="@+id/edtDurnFrom"
+                    android:background="@drawable/editext_background"
+                    android:hint="From"
+                    android:maxLength="50"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textSize="21dp"
+                    tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_weight="0.4"
+                    android:id="@+id/edtDurnTo"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:background="@drawable/editext_background"
+                    android:hint="To"
+                    android:maxLength="50"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textSize="21dp"
+                    tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:id="@+id/radioGroupFood"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rdoBefFood"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/material_blue_800_new"
+                        android:textSize="21dp"
+                        android:text="Before Food"
+                        android:buttonTint="@color/material_blue_800_new"
+                        android:layout_weight="1"/>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rdoAftFood"
+                        android:text="After Food"
+                        android:buttonTint="@color/material_blue_800_new"
+                        android:textColor="@color/material_blue_800_new"
+                        android:textSize="21dp"
+                        android:layout_weight="1"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Frequency :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/Black"
+                android:textSize="21dp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,SpUsage" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:id="@+id/edtFreq"
+                    android:layout_weight="0.4"
+                    android:background="@drawable/editext_background"
+                    android:maxLength="50"
+                    android:padding="5dp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:textSize="21dp"
+                    tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="170dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_shape"
+                android:padding="1dp"
+                android:textSize="21dp"
+                android:text="add"
+                android:textColor="@android:color/white"
+                tools:ignore="HardcodedText" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

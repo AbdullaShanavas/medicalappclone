@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="1dp">
+
+
+        <ImageView
+            android:id="@+id/backicon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+
+            android:src="@drawable/ic_baseline_chevron_left_24"
+            />
+
+
+
+        <TextView
+            android:id="@+id/txt_hdr"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="25dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="Family Member Details"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Black"
+            android:textSize="17dp"
+            android:textStyle="bold"
+
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/grey" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+
+
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Name :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Black"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+
+            >
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="0.4"
+                android:background="@drawable/editext_background"
+                android:hint="Name"
+                android:maxLength="50"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="17dp"
+                tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Age :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Black"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+
+            >
+
+            <EditText
+                android:id="@+id/edt_age"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="0.4"
+                android:background="@drawable/editext_background"
+                android:hint="Age"
+                android:inputType="number"
+                android:maxLength="50"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="17dp"
+                tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Relation :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Black"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+
+            >
+
+            <EditText
+                android:id="@+id/edt_relation"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="0.4"
+                android:background="@drawable/editext_background"
+                android:hint="Relation"
+                android:maxLength="50"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="17dp"
+                tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Country :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Black"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+
+            >
+
+            <EditText
+                android:id="@+id/edt_country"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="0.4"
+                android:background="@drawable/editext_background"
+                android:hint="Country"
+                android:maxLength="50"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="17dp"
+                tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Blood Group"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Black"
+            android:textSize="17dp"
+
+
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+
+            >
+
+            <EditText
+                android:id="@+id/edt_bg"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="0.4"
+                android:background="@drawable/editext_background"
+                android:hint="Blood Group"
+                android:maxLength="50"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="17dp"
+                tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Phone Number :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Black"
+
+
+            android:textSize="17dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+
+            >
+
+            <EditText
+                android:id="@+id/edt_pn"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="0.4"
+                android:background="@drawable/editext_background"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:maxLength="50"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="17dp"
+                tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnr_fm_details"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:weightSum="3"
+        android:layout_margin="5dp"
+        tools:ignore="HardcodedText,SpUsage"
+        >
+
+
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:padding="1dp"
+            android:layout_weight="1"
+            android:textSize="17dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_shape"
+            android:text="Delete"
+            tools:ignore="HardcodedText,SpUsage" />
+
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:padding="1dp"
+            android:layout_weight="1"
+            android:textSize="17dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_shape"
+            android:text="Update"
+            tools:ignore="HardcodedText,SpUsage" />
+
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:padding="1dp"
+            android:layout_weight="1"
+            android:textSize="17dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_shape"
+            android:text="Ok"
+            tools:ignore="HardcodedText,SpUsage" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:padding="1dp"
+        android:layout_marginTop="10dp"
+        android:textSize="17dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_shape"
+        android:text="Add"
+        tools:ignore="HardcodedText,SpUsage" />
+
+
+
+</LinearLayout>

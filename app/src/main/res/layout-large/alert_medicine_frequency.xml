@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_box"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="3dp"
+        android:background="@color/material_blue_800_new"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Select Frequency"
+            android:background="@color/material_blue_800_new"
+            android:textColor="@android:color/white"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:visibility="visible"
+            android:id="@+id/close_img"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical|end"
+            android:src="@drawable/round_cancel"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            >
+
+
+
+            <RadioButton
+                android:id="@+id/rdo_one"
+                android:layout_width="wrap_content"
+                android:textSize="17dp"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/material_blue_800_new"
+                android:text="One" />
+
+
+            <RadioButton
+                android:id="@+id/rdo_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+
+                android:buttonTint="@color/material_blue_800_new"
+                android:text="Two" />
+
+
+
+            <RadioButton
+                android:id="@+id/rdo_three"
+                android:layout_width="wrap_content"
+                android:textSize="17dp"
+
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/material_blue_800_new"
+                android:text="Three" />
+
+
+            <RadioButton
+                android:id="@+id/rdo_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+
+                android:buttonTint="@color/material_blue_800_new"
+                android:text="Four" />
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        >
+
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:background="@drawable/button_shape"
+            android:padding="1dp"
+            android:text="Ok"
+            android:textColor="@android:color/white"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

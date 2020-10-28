@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="1dp">
+
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_baseline_chevron_left_24"
+            />
+
+
+        <TextView
+            android:id="@+id/textViewback"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Back"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:layout_marginLeft="20dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/material_blue_800_new"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="25dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="My Profile"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Black"
+            android:textSize="17dp"
+            android:textStyle="bold"
+
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|end"
+            android:layout_margin="5dp"
+
+            >
+
+            <Button
+                android:id="@+id/btn_edit"
+                android:layout_width="190dp"
+                android:layout_height="45dp"
+                android:layout_gravity="end"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_shape"
+                android:gravity="center"
+                android:text="Edit Profile"
+                android:textColor="@android:color/white"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="2.5"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center|start"
+                android:text="Name :"
+                android:paddingLeft="10dp"
+                android:textColor="@color/Black"
+
+                android:textSize="17dp"
+                tools:ignore="HardcodedText,SpUsage" />
+
+            <LinearLayout
+                android:id="@+id/edt_pr"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/edt_profile_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Enter Your Name"
+                    android:maxLength="50"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/edittext_profile"
+                    android:singleLine="true"
+                    android:textSize="17dp"
+                    tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="2.5"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center|start"
+                android:text="Date Of Birth :"
+                android:paddingLeft="10dp"
+                android:textColor="@color/Black"
+
+                android:textSize="17dp"
+                tools:ignore="HardcodedText,SpUsage" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/edt_profile_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Date Of Birth"
+                    android:editable="false"
+                    android:maxLength="50"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/edittext_profile"
+                    android:singleLine="true"
+                    android:textSize="17dp"
+                    tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="2.5"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center|start"
+                android:text="Age :"
+                android:paddingLeft="10dp"
+                android:textColor="@color/Black"
+                android:textSize="17dp"
+                tools:ignore="HardcodedText,SpUsage"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/edt_profile_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Age"
+                    android:maxLength="50"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/edittext_profile"
+                    android:singleLine="true"
+                    android:textSize="17dp"
+                    tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="2.5"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center|start"
+                android:text="Gender :"
+                android:paddingLeft="10dp"
+                android:textColor="@color/Black"
+
+                android:textSize="17dp"
+                tools:ignore="HardcodedText,SpUsage" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/rdo_male"
+                            android:layout_gravity="center"
+                            android:text="Male"
+                            android:textSize="17dp"
+                            android:buttonTint="@color/material_blue_800_new"
+                            android:layout_weight="1"/>
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/rdo_female"
+                            android:text="Female"
+                            android:textSize="17dp"
+
+                            android:buttonTint="@color/material_blue_800_new"
+                            android:layout_weight="1"/>
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="2.5"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center|start"
+                android:text="Blood Group :"
+                android:paddingLeft="10dp"
+                android:textColor="@color/Black"
+
+                android:textSize="17dp"
+
+                tools:ignore="HardcodedText,SpUsage" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/edt_proile_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Blood Group "
+                    android:maxLength="50"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/edittext_profile"
+                    android:singleLine="true"
+                    android:textSize="17dp"
+
+                    tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="2.5"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center|start"
+                android:text="Phone Number :"
+                android:paddingLeft="10dp"
+                android:textColor="@color/Black"
+
+                android:textSize="17dp"
+                tools:ignore="HardcodedText,SpUsage" />
+
+            <LinearLayout
+                android:id="@+id/layout_spinner_pdt_Filter"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/edt_proile_phno"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Phone Number"
+                    android:maxLength="50"
+                    android:paddingLeft="5dp"
+                    android:inputType="number"
+                    android:background="@drawable/edittext_profile"
+                    android:singleLine="true"
+                    android:textSize="17dp"
+                    tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="2.5"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center|start"
+                android:text="Email :"
+                android:paddingLeft="10dp"
+                android:textColor="@color/Black"
+
+                android:textSize="17dp"
+                tools:ignore="HardcodedText,SpUsage" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/edt_proile_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Email"
+                    android:maxLength="50"
+                    android:background="@drawable/edittext_profile"
+                    android:singleLine="true"
+                    android:paddingLeft="5dp"
+                    android:textSize="17dp"
+                    tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lnr_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_margin="5dp"
+
+            >
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:layout_gravity="end"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_shape"
+                android:text="Update"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="17dp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="5dp"
+
+                >
+
+
+                <Button
+                    android:id="@+id/btn_medical_records"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="start"
+                    android:background="@drawable/button_shape"
+                    android:text="Medical Records"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/btn_medication"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="end"
+                    android:background="@drawable/button_shape"
+                    android:text="Medications"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText,SpUsage" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="8dp">
+
+
+                <Button
+                    android:id="@+id/btn_freq_specialist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@drawable/button_shape"
+                    android:text="Frequent Specialist"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="8dp">
+
+
+                <Button
+                    android:id="@+id/btn_family_member"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_shape"
+                    android:text="Family Members"
+                    android:textStyle="bold"
+
+                    android:textColor="@android:color/white"
+                    android:textSize="17dp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
